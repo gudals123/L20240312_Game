@@ -6,11 +6,15 @@ class GameObject
     public int x;
     public int y;
     public char shape;
-
     public GameObject()
     {
         x = 0;
         y = 0;
+    }
+    public GameObject(int newX, int newY)
+    {
+        x = newX;
+        y = newY;
     }
 
     ~GameObject()
@@ -28,9 +32,12 @@ class GameObject
 
     }
 
+
+
     public virtual void Render()
     {
-
+        Console.SetCursorPosition(x, y);
+        Console.Write(shape);
     }
     
 

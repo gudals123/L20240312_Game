@@ -5,6 +5,13 @@
         shape = ' ';
     }
 
+    public Floor(int newX, int newY)
+    {
+        shape = ' ';
+        x = newX;
+        y = newY;
+    }
+
     ~Floor() 
     { 
 
@@ -22,7 +29,7 @@
 
     public override void Render()
     {
-
+        //base.Render();
     }
 
 }

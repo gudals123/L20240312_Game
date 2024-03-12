@@ -1,11 +1,18 @@
-﻿class Map : GameObject
+﻿class Wall : GameObject
 {
-    public Map()
+    public Wall()
     {
         shape = '*';
     }
 
-    ~Map() 
+    public Wall(int newX, int newY)
+    {
+        shape = '*';
+        x = newX; 
+        y = newY;
+    }
+
+    ~Wall() 
     { 
 
     }
@@ -22,7 +29,7 @@
 
     public override void Render()
     {
-
+        base.Render();
     }
 
 }

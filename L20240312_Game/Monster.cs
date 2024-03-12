@@ -5,6 +5,13 @@
         shape = 'M';
     }
 
+    public Monster(int newX, int newY)
+    {
+        shape = 'M';
+        x = newX;
+        y = newY;
+    }
+
     ~Monster() 
     { 
 
@@ -22,7 +29,7 @@
 
     public override void Render()
     {
-
+        base.Render();
     }
 
 }
